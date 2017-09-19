@@ -1,0 +1,10 @@
+.QuickInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-right: 20px;
+}
+
+.QuickInfoCard {
+  margin-bottom: 20px;
+}

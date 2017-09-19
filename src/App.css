@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.Main {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  height: 100%;
+}

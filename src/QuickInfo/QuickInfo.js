@@ -89,17 +89,17 @@ const technologies = [
 const Overlay = () => (
   <div className="Overlay">
     <Mailto email={['colinvinson', 'protonmail.com'].join('@')} obfuscate={true}>
-      <IconButton tooltip="Email Me">
+      <IconButton tooltip="Email Me" tooltipPosition="top-center">
         <EmailIcon />
       </IconButton>
     </Mailto>
     <a href="https://github.com/cvinson">
-      <IconButton tooltip="Github">
+      <IconButton tooltip="Github" tooltipPosition="top-center">
         <CodeIcon />
       </IconButton>
     </a>
     <a href="https://github.com/cvinson">
-      <IconButton tooltip="Download My Resume">
+      <IconButton tooltip="Download My Resume" tooltipPosition="top-center">
         <ResumeIcon />
       </IconButton>
     </a>
@@ -111,7 +111,7 @@ export default () => {
     <div className="QuickInfo">
       <Card className="QuickInfoCard">
         <CardMedia overlay={<Overlay />}>
-          <img src="http://colinvinson.com/images/me.jpg" alt="Me relaxing by some trees." width="200"/>
+          <img src="./me.png" alt="Me relaxing by some trees." width="200"/>
         </CardMedia>
       </Card>
       <Card className="QuickInfoCard Education">

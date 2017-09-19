@@ -10,7 +10,11 @@
 }
 
 .QuickInfoCard .Overlay {
-  padding: 2px 10px 10px;
+  margin-top: -8px;
+}
+
+.QuickInfoCard .Overlay svg {
+  color: white !important;
 }
 
 .EducationTitle {

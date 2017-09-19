@@ -13,9 +13,9 @@ export default () => {
           <img src="http://colinvinson.com/images/me.jpg" alt="Me relaxing by some trees."/>
         </CardMedia>
       </Card>
-      <Card className="QuickInfoCard">
-        <CardTitle title="Education" />
-        <CardText>
+      <Card className="QuickInfoCard Education">
+        <CardTitle title="Education" className="EducationTitle" />
+        <CardText className="EducationText">
           <List>
             <ListItem
               leftAvatar={<Avatar icon={<SchoolIcon />} />}

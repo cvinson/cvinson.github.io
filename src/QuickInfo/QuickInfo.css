@@ -8,3 +8,11 @@
 .QuickInfoCard {
   margin-bottom: 20px;
 }
+
+.EducationTitle {
+  padding-bottom: 0 !important;
+}
+
+.EducationText {
+  padding-top: 0 !important;
+}

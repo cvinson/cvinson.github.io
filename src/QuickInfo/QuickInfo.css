@@ -9,6 +9,10 @@
   margin-bottom: 20px;
 }
 
+.QuickInfoCard .Overlay {
+  padding: 2px 10px 10px;
+}
+
 .EducationTitle {
   padding-bottom: 0 !important;
 }

@@ -1,12 +1,13 @@
 .QuickInfo {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 380px;
   margin-right: 20px;
 }
 
 .QuickInfoCard {
   margin-bottom: 20px;
+  width: 350px;
 }
 
 .QuickInfoCard .Overlay {
@@ -23,6 +24,7 @@
 
 .EducationText {
   padding-top: 0 !important;
+  text-align: left;
 }
 
 .TechnologyGrid {

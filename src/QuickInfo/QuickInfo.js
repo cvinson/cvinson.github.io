@@ -127,7 +127,7 @@ export default () => {
         </CardText>
       </Card>
       <Card className="QuickInfoCard Technology">
-        <CardTitle title="Selected Technology" className="TechnologyTitle" />
+        <CardTitle title="Selected Tech I've Used" className="TechnologyTitle" />
         <GridList className="TechnologyGrid" cellHeight="auto" cols={6}>
           {technologies.map((tech) => (
             <IconButton

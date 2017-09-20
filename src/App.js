@@ -7,10 +7,13 @@ import Konami from 'react-konami';
 import shuffle from 'lodash/shuffle';
 import QuickInfo from './QuickInfo/QuickInfo';
 import Details from './Details/Details';
-import Loader from './Loader/Loader';
 import './App.css';
 
 const muiTheme = getMuiTheme({
+  appBar: {
+    fontFamily: '"Slabo 27px"'
+  },
+  fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: '#6C3771'
   }

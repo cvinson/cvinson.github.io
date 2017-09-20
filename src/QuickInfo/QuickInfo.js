@@ -3,7 +3,7 @@ import Mailto from 'react-mailto';
 import Avatar from 'material-ui/Avatar';
 import { Card, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
-import { GridList, GridTile } from 'material-ui/GridList';
+import { GridList  } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import EmailIcon from 'material-ui/svg-icons/communication/email';
 import CodeIcon from 'material-ui/svg-icons/action/code';
@@ -130,10 +130,13 @@ export default () => {
         <CardTitle title="Selected Technology" className="TechnologyTitle" />
         <GridList className="TechnologyGrid" cellHeight="auto" cols={6}>
           {technologies.map((tech) => (
-            <GridTile
-              key={tech.name}>
+            <IconButton
+              key={tech.name}
+              style={{ padding: 0 }}
+              tooltip={tech.name}
+              tooltipPosition="top-center">
               <img src={tech.logo} alt={tech.name} width="44"/>
-            </GridTile>
+            </IconButton>
           ))}
         </GridList>
       </Card>

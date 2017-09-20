@@ -1,9 +1,11 @@
 import React from 'react';
+import Paper from 'material-ui/Paper';
+import './Details.css';
 
 export default () => {
   return (
-    <div className="Details">
+    <Paper className="Details">
       These are the details.
-    </div>
+    </Paper>
   );
 }

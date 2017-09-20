@@ -37,6 +37,18 @@ const technologies = [
     logo: 'http://logo.clearbit.com/babeljs.io'
   },
   {
+    name: 'Restify',
+    logo: 'https://raw.githubusercontent.com/restify/node-restify/gh-images/logo/png/restify_logo_black_transp_288x288.png'
+  },
+  {
+    name: 'Heroku',
+    logo: 'https://logo.clearbit.com/heroku.com'
+  },
+  {
+    name: 'Ionic',
+    logo: 'https://logo.clearbit.com/ionicframework.com'
+  },
+  {
     name: 'Lodash',
     logo: 'http://logo.clearbit.com/lodash.com'
   },
@@ -61,8 +73,20 @@ const technologies = [
     logo: 'http://logo.clearbit.com/elastic.co'
   },
   {
+    name: 'Sequelize',
+    logo: 'https://cdn.worldvectorlogo.com/logos/sequelize.svg'
+  },
+  {
+    name: 'Knex',
+    logo: 'https://cdn.worldvectorlogo.com/logos/knex-1.svg'
+  },
+  {
     name: 'PostgrSQL',
     logo: 'http://logo.clearbit.com/postgresql.org'
+  },
+  {
+    name: 'MongoDB',
+    logo: 'https://cdn.worldvectorlogo.com/logos/mongodb.svg'
   },
   {
     name: 'Redis',

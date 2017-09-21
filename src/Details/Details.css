@@ -2,11 +2,12 @@
   width: 100%;
 }
 
-.DetailsCard {
-  margin-bottom: 20px;
+.Details h2 {
+  font-weight: normal;
 }
 
-.EmploymentItem {
+.DetailsCard {
+  margin-bottom: 20px;
   text-align: left;
 }
 

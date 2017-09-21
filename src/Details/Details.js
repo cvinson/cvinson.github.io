@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardText, CardTitle } from 'material-ui/Card';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 import './Details.css';
 
 const jobs = [
@@ -38,15 +38,13 @@ export default () => {
           I am a passionate developer with experience building large-scale applications for varied audiences. I take pride in the work I do and I strive to ensure the products I work on are fast, intuitive, and easy to use. I learn new paradigms quickly and enjoy using newly acquired knowledge in the field.
         </CardText>
       </Card>
-      <Card className="DetailsCard">
-        <CardTitle title="Employment" className="EmploymentTitle" />
-      </Card>
+      <h2>Employment</h2>
       {jobs.map((job) => {
         const onClick = () => window.location.href = job.link;
         return (
           <Card className="DetailsCard EmploymentItem">
             <CardHeader
-              avatar={<img src={job.logo} />}
+              avatar={<img src={job.logo} alt={job.company} />}
               title={job.company}
               subtitle={`${job.title}; ${job.dates}`}
               onClick={onClick} />

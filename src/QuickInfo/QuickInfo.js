@@ -38,7 +38,7 @@ const technologies = [
   },
   {
     name: 'Restify',
-    logo: 'https://raw.githubusercontent.com/restify/node-restify/gh-images/logo/png/restify_logo_black_transp_288x288.png'
+    logo: '/images/restify-logo.png'
   },
   {
     name: 'Heroku',
@@ -122,7 +122,7 @@ const Overlay = () => (
         <CodeIcon />
       </IconButton>
     </a>
-    <a href="https://github.com/cvinson">
+    <a href="/files/Colin Vinson - Senior Developer.pdf">
       <IconButton tooltip="Download My Resume" tooltipPosition="top-center">
         <ResumeIcon />
       </IconButton>
@@ -135,7 +135,7 @@ export default () => {
     <div className="QuickInfo">
       <Card className="QuickInfoCard">
         <CardMedia overlay={<Overlay />}>
-          <img src="./me.png" alt="Me relaxing by some trees." width="200"/>
+          <img src="/images/me.png" alt="Me relaxing by some trees." width="200"/>
         </CardMedia>
       </Card>
       <Card className="QuickInfoCard Education">

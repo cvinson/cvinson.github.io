@@ -2,6 +2,15 @@
   width: 100%;
 }
 
+.DetailsCard {
+  margin-bottom: 20px;
+}
+
 .EmploymentItem {
   text-align: left;
+}
+
+.EmploymentItem img {
+  max-height: 40px;
+  max-width: 40px;
 }

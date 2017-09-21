@@ -10,10 +10,6 @@ import Details from './Details/Details';
 import './App.css';
 
 const muiTheme = getMuiTheme({
-  appBar: {
-    fontFamily: '"Slabo 27px"'
-  },
-  fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: '#6C3771'
   }

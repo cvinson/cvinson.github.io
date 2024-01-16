@@ -1,0 +1,120 @@
+:root {
+	/* Rosé Pine Dawn */
+	--rp-base: rgb(250, 244, 237);
+	--rp-surface: rgb(255, 250, 243);
+	--rp-overlay: rgb(242, 233, 222);
+	--rp-muted: rgb(152, 147, 165);
+	--rp-subtle: rgb(121, 117, 147);
+	--rp-text: rgb(87, 82, 121);
+	--rp-love: rgb(180, 99, 122);
+	--rp-gold: rgb(234, 157, 52);
+	--rp-rose: rgb(215, 130, 126);
+	--rp-pine: rgb(40, 105, 131);
+	--rp-foam: rgb(86, 148, 159);
+	--rp-iris: rgb(144, 122, 169);
+	--rp-highlight-low: rgb(244, 237, 232);
+	--rp-highlight-med: rgb(223, 218, 217);
+	--rp-highlight-high: rgb(206, 202, 205);
+  --sizeUnit: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Rosé Pine */
+		--rp-base: rgb(25, 23, 36);
+		--rp-surface: rgb(31, 29, 46);
+		--rp-overlay: rgb(38, 35, 58);
+		--rp-muted: rgb(110, 106, 134);
+		--rp-subtle: rgb(144, 140, 170);
+		--rp-text: rgb(224, 222, 244);
+		--rp-love: rgb(235, 111, 146);
+		--rp-gold: rgb(246, 193, 119);
+		--rp-rose: rgb(235, 188, 186);
+		--rp-pine: rgb(49, 116, 143);
+		--rp-foam: rgb(156, 207, 216);
+		--rp-iris: rgb(196, 167, 231);
+		--rp-highlight-low: rgb(33, 32, 46);
+		--rp-highlight-med: rgb(64, 61, 82);
+		--rp-highlight-high: rgb(82, 79, 103);
+  }
+}
+
+body {
+  background: var(--rp-base);
+  color: var(--rp-text);
+  font-family: Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+}
+
+a, a:active, a:visited {
+  color: var(--rp-love);
+}
+
+a:hover {
+  color: var(--rp-iris);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  letter-spacing: -0.025em;
+  padding: calc(var(--sizeUnit) * 3);
+
+  & h1 {
+    font-size: 3em;
+    margin: var(--sizeUnit) calc(var(--sizeUnit) * 2);  
+  }
+}
+
+#branding {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+img#avatar {
+  border: 4px solid var(--rp-love);
+  border-radius: 50%;
+  height: calc(var(--sizeUnit) * 12);
+  width: auto;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--sizeUnit);
+
+  svg {
+    color: var(--rp-text);
+    height: calc(var(--sizeUnit) * 6);
+    width: auto;
+
+    &:hover, &:active {
+      color: var(--rp-gold);
+    }
+  }
+}
+
+main {
+  font-size: 1.2em;
+  margin-bottom: calc(var(--sizeUnit) * 10);
+  padding: 0 calc(var(--sizeUnit) * 3);
+}
+
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    background: var(--rp-overlay); 
+    bottom: 0;
+    justify-content: center;
+    padding: var(--sizeUnit);
+    position: fixed;
+    right: 0;
+    width: 100%; 
+  }
+}
